@@ -53,14 +53,23 @@ export class UserDataLayer extends WFSLayer {
     preHandleDescribeLayer (describeLayer = {}) {
         // Only styles and controlData are needed from DescribeLayer here
         // others will be handled on add maplayer
-        const { styles = [], controlData = {}, ...toStore } = describeLayer;
+        const { styles = [], controlData = {}, fields, ...toStore } = describeLayer;
         this._controlData = controlData;
+        this.setFields(fields);
         this.setStyles(styles.map(s => new VectorStyle(s)));
 
         if (this.getDescribeLayerStatus() !== DESCRIBE_LAYER.LOADED) {
             // describe layer isn't processed, update predifened info
             this.setDescribeLayerInfo(toStore);
         }
+    }
+
+    getFields () {
+        return this._fields;
+    }
+
+    setFields (fields = []) {
+        this._fields = fields;
     }
 
     /**

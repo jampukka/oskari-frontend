@@ -95,7 +95,8 @@ class UserLayersHandler extends StateHandler {
         const values = {
             locale: layer.getLocale(),
             style: layer.getCurrentStyle().getFeatureStyle(),
-            id
+            fields: layer.getFields(),
+            id,
         };
         this.showLayerDialog(values);
     }

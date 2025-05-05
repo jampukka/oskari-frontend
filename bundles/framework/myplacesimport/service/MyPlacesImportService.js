@@ -143,7 +143,7 @@ Oskari.clazz.define('Oskari.mapframework.bundle.myplacesimport.MyPlacesImportSer
      * @method getUserLayers
      */
     getUserLayers: function () {
-        fetch(Oskari.urls.getRoute('GetUserLayers', { srs: this.srs }), {
+        fetch(Oskari.urls.getRoute('GetUserLayers', { srs: this.srs, lang: Oskari.getLang() }), {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
