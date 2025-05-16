@@ -15,7 +15,8 @@ Oskari.registerLocalization(
             "success": "Dataset importerade med {count, plural, one {# objekt} other {# objekt}}. Du kan hitta kartlagret i menyn \"Mina uppgifter\".",
             "tabs": {
                 "general" : "Allmän",
-                "visualization": "Visualisering"
+                "visualization": "Visualisering",
+                "properties": "Egenskaper"
             },
             "layer": {
                 "name": "Namnge kartlagret",

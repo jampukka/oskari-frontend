@@ -14,7 +14,8 @@ Oskari.registerLocalization(
             "success": "The dataset has been imported with {count, plural, one {# feature} other {# features}}. You can now find it in the \"My data\" menu.",
             "tabs": {
                 "general": "General",
-                "visualization": "Visualization"
+                "visualization": "Visualization",
+                "properties": "Properties"
             },
             "layer": {
                 "name": "Map layer name",

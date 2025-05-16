@@ -78,7 +78,8 @@ Oskari.clazz.define('Oskari.mapframework.bundle.myplacesimport.MyPlacesImportBun
             this.handler.showLayerDialog({
                 id,
                 locale: layer.getLocale(),
-                style: layer.getCurrentStyle().getFeatureStyle()
+                style: layer.getCurrentStyle().getFeatureStyle(),
+                fields: layer.getFields()
             });
         }
     },

@@ -111,7 +111,7 @@ export const LayerFormContent = ({ values, config, onOk, onCancel, error }) => {
                     !isImport &&
                     {
                         key: 'properties',
-                        label: 'Properties',
+                        label: <Message messageKey='flyout.tabs.properties'/>,
                         children: <Tab><PropertiesTab fields={state.fields} updateFields={updateFields} /></Tab>
                     }
                 ]}

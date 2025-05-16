@@ -14,7 +14,8 @@ Oskari.registerLocalization(
             "success": "Aineistosta tuotiin {count, plural, one {# kohde} other {# kohdetta}} onnistuneesti. Voit tarkastella aineistoa Omat tiedot -valikon Omat aineistot -välilehden kautta.",
             "tabs" : {
                 "general": "Yleiset",
-                "visualization": "Visualisointi"
+                "visualization": "Visualisointi",
+                "properties": "Ominaisuudet"
             },
             "layer": {
                 "name": "Karttatason nimi",
